@@ -69,11 +69,7 @@ address {
 input,
 textarea,
 button,
-select {
-	font-family: inherit;
-	font-size: inherit;
-	color: inherit;
-}
+select {}
 
 input::-ms-clear {
 	display: none;
@@ -145,14 +141,6 @@ input[type='file'] {
 	border-radius: 10px;
 }
 
-.button_register:hover {
-	background-color: rgb(93, 93, 100);
-}
-
-.button_register:active {
-	background-color: rgb(60, 60, 65);
-}
-
 
 
 
@@ -191,6 +179,7 @@ body {
 .header_list {
 	display: flex;
 	gap: 20px;
+	align-items: center;
 }
 
 .button_container {
@@ -204,9 +193,102 @@ body {
 	top: 50%;
 }
 
+input {
+	height: 30px;
+	width: 100%;
+	font-size: 20px;
+}
+
+
+
 .fight_button {
 	padding: 20px;
 	font-size: 50px;
 	border: solid 1px black;
 	border-radius: 10px;
 }
+
+
+.settigns_container {
+	padding: 20px;
+	display: flex;
+
+}
+
+.settings_name {
+	padding: 0 20px 0 0;
+}
+
+.settings_button_edit {
+	padding: 5px;
+	border: 1px solid black;
+}
+
+.settings_button_edit.active {
+	display: none;
+}
+
+.settings_input {
+	max-width: 250px;
+	height: 30px;
+	display: none;
+}
+
+.settings_input.active {
+	display: block;
+}
+
+.settigns_save {
+	margin: 0 0 0 10px;
+	display: none;
+	padding: 5px;
+	border: 1px solid black;
+}
+
+.settigns_save.active {
+	display: block;
+}
+
+.current_name.active {
+	display: none;
+}
+
+.character_container {
+	font-size: 20px;
+	display: flex;
+	gap: 30px;
+	padding: 10px;
+}
+
+.character_img {}
+
+.character_img img {
+	border-radius: 30px;
+	object-fit: cover;
+	height: 350px;
+	width: 300px;
+}
+
+.character_content {}
+
+.character_name {}
+
+.current_name {}
+
+.character_results {
+	gap: 10px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.character_win {
+	color: green;
+}
+
+.character_win_count {}
+
+.character_lose {
+	color: red;
+}
+
+.character_lose_count {}
