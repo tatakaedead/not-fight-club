@@ -44,4 +44,39 @@ if (settignsSaveBtn) {
         currentName.textContent = localStorage.getItem('savedValue');
     })
 }
+const characterContainerImg = document.querySelector('.character_img')
+const characterImg = document.querySelector('.character_img img');
+const popup = document.querySelector('.character_popup');
+const popupClose = document.querySelector('.close_img');
+const characterEdit = document.querySelector('.character_edit');
+const popupContent = document.querySelector('.popup_content')
+const activePopup = document.querySelector('.character_popup.active')
+console.log(popupContent)
 
+
+popup.addEventListener('click', (event) => {
+    if (event.target.classList.contains('character_popup')) {
+        popup.classList.remove('active');
+    }
+
+})
+
+characterContainerImg.addEventListener('mouseover', function (event) {
+
+    characterEdit.classList.add('active');
+
+});
+
+characterContainerImg.addEventListener('mouseleave', function (event) {
+    characterEdit.classList.remove('active');
+});
+
+
+characterEdit.addEventListener('click', function (event) {
+    popup.classList.toggle('active');
+})
+
+popupClose.addEventListener('click', function () {
+    popup.classList.remove('active');
+
+})
