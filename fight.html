@@ -16,7 +16,6 @@
                     <h1 class="header_title">battle</h1>
                 </div>
                 <ul class="header_list">
-
                     <li><a href="home.html"><img src="assets/svg/home.svg" alt=""></a></li>
                     <li><a href="character.html"><img src="assets/svg/character.svg" alt=""></a></li>
                     <li><a href="settings.html"><img src="assets/svg/settings.svg" alt=""></a></li>
@@ -24,7 +23,117 @@
             </div>
         </div>
     </header>
+    <div class="battle_items">
+        <div class="battle_item">
+            <div class="item_title current_name">
+            </div>
+            <div class="battle_img_container ">
+                <img class="battle_img" src="assets/img/default.jpg" alt="default_character">
+            </div>
+            <progress value="150" max="150" class="item_health">
+            </progress>
+            <div class="item_health_num">
+                150
+            </div>
+        </div>
+        <div class="battle_menu">
+            <div class="menu_title">
+                Please pick 1 Attack zone and 2 Defence zones
+            </div>
+            <div class="zone_subtitles">
+                <div class="attack_subtitle">
+                    Attack Zones
+                </div>
+                <div class="defence_subtitle">
+                    Defence Zones
+                </div>
+            </div>
+            <div class="menu_container">
+                <div class="attack_zones">
+                    <div class="attack_zone">
+                        <label class="attack_text">
+                            Head
+                        </label>
+                        <input type="radio" name="" id="">
+                    </div>
+                    <div class="attack_zone">
+                        <label class="attack_text">
+                            Neck
+                        </label>
+                        <input type="radio" name="" id="">
+                    </div>
+                    <div class="attack_zone">
+                        <div class="attack_text">
+                            Body
+                        </div>
+                        <input type="radio" name="" id="">
+                    </div>
+                    <div class="attack_zone">
+                        <div class="attack_text">
+                            Belly
+                        </div>
+                        <input type="radio" name="" id="">
+                    </div>
+                    <div class="attack_zone">
+                        <div class="attack_text">
+                            Legs
+                        </div>
+                        <input type="radio" name="" id="">
+                    </div>
+                </div>
+                <div class="separator" role="separator">
+                </div>
+                <div class="defence_zones">
+                    <div class="defence_zone">
+                        <label class="defence_text">
+                            Head
+                        </label>
+                        <input type="radio" name="" id="">
+                    </div>
+                    <div class="defence_zone">
+                        <label class="defence_text">
+                            Neck
+                        </label>
+                        <input type="radio" name="" id="">
+                    </div>
+                    <div class="defence_zone">
+                        <label class="defence_text">
+                            Body
+                        </label>
+                        <input type="radio" name="" id="">
+                    </div>
+                    <div class="defence_zone">
+                        <label class="defence_text">
+                            Belly
+                        </label>
+                        <input type="radio" name="" id="">
+                    </div>
+                    <div class="defence_zone">
+                        <label class="defence_text">
+                            Legs
+                        </label>
+                        <input type="radio" name="" id="">
+                    </div>
+                </div>
+            </div>
+            <button disabled class="menu_button">Attack</button>
+        </div>
+        <div class="battle_enemy_item">
+            <div class="enemy_title">
+                Spider
+            </div>
+            <div class="enemy_img">
+                <img src="assets/img/default.jpg" alt="">
+            </div>
+            <progress value="150" max="150" class="enemy_health_progress"></progress>
+            <div class="enemy_health_num">
+                100
+            </div>
+        </div>
+    </div>
+    <div class="battle_log">
 
+    </div>
     <script src="script.js"></script>
 </body>
 

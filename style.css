@@ -95,9 +95,7 @@ button::-moz-focus-inner {
 	border: 0;
 }
 
-label {
-	cursor: pointer;
-}
+label {}
 
 legend {
 	display: block;
@@ -105,6 +103,10 @@ legend {
 
 input[type='file'] {
 	max-width: 100%;
+}
+
+input[type='radio'] {
+	cursor: pointer;
 }
 
 .register_container {
@@ -195,7 +197,7 @@ body {
 
 input {
 	height: 30px;
-	width: 100%;
+	width: 15px;
 	font-size: 20px;
 }
 
@@ -236,6 +238,7 @@ input {
 
 .settings_input.active {
 	display: block;
+	width: 300px;
 }
 
 .settigns_save {
@@ -279,7 +282,9 @@ input {
 
 .character_edit.active {
 	display: block;
+	opacity: 0.7;
 }
+
 
 .character_edit {
 	display: none;
@@ -386,11 +391,150 @@ input {
 	box-sizing: border-box;
 	width: 150px;
 	height: 200px;
+	position: relative;
+}
+
+.popup_image:hover {
+	opacity: 0.7;
 }
 
 .popup_image img {
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
-	cursor: pointer;
+}
+
+.popup_image img:hover {}
+
+
+.battle_items {
+	display: flex;
+	justify-content: space-around;
+}
+
+.battle_item {}
+
+.item_title {
+	font-size: 20px;
+	text-align: center;
+}
+
+.current_name {}
+
+.battle_img_container img {
+	width: 300px;
+	height: 350px;
+	object-fit: cover;
+}
+
+.item_health {
+	width: 100%;
+	margin: 10px 0 0 0;
+}
+
+.item_health_num {
+	text-align: center;
+}
+
+.battle_menu {
+	display: flex;
+	flex-direction: column;
+	align-self: center;
+}
+
+.menu_title {
+	font-size: 20px;
+	padding: 0 0 20px 0;
+}
+
+
+.zone_subtitles {
+	display: flex;
+	justify-content: space-between;
+}
+
+.attack_subtitle {}
+
+.defence_subtitle {}
+
+.menu_container {
+	display: flex;
+	justify-content: space-between;
+	padding: 0 0 10px 0;
+}
+
+.attack_zones {}
+
+.attack_zone {
+	gap: 20px;
+	align-items: center;
+	display: flex;
+	justify-content: end;
+}
+
+
+
+
+.attack_text {}
+
+.separator {
+	background-color: black;
+	width: 1px;
+}
+
+.defence_zones {}
+
+.defence_zone {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+	justify-content: end;
+}
+
+.defence_text {}
+
+.defencek_text {}
+
+.menu_button {
+	padding: 10px;
+	border: 1px solid black;
+	display: inline-block;
+	width: 200px;
+	margin: 0 auto;
+}
+
+.battle_enemy_item {}
+
+.enemy_title {
+	font-size: 20px;
+	text-align: center;
+}
+
+.enemy_img img {
+	width: 300px;
+	height: 350px;
+	object-fit: cover;
+}
+
+.enemy_health_progress::-webkit-progress-value {
+	background-color: rgba(255, 0, 0, 0.725);
+
+}
+
+
+.enemy_health_progress {
+	margin: 10px 0 0 0;
+	width: 100%;
+}
+
+.enemy_health_num {
+	text-align: center;
+}
+
+.input_register {
+	width: 100%;
+}
+
+.battle_log {
+	border: 1px solid black;
 }
